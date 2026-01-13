@@ -1,20 +1,28 @@
-package com.study._21_Ingeritance;
+package com.study._21_Inheritance;
 
-// 부모클래스 - 기초설계도 역할
-// 모든 차가 가져야 할 공통적인 필드, 기능(메서드)
-// 공통필드, 공통메서드를 추려내는 자겅ㅂ ->  추상화
+// 부모클래스 - 기초 설계도(공통부분) 역할
+// 모든 차가 가져야할 공통적인 필드, 기능(메서드)들이 정의됨
+// 공통필드, 공통메서드를 추려내는 작업 -> 추상화
 public class Car {
     private int year; // 생산연도
     // 상속받는 클래스만 접근가능
     protected String brand; // 브랜드명
 
+    // 기본생성자
     public Car() {
         System.out.println("기본생성자 호출!");
         this.brand = "기본차";
     }
 
+    // 전체 초기화 생성자
+    public Car(int year, String brand) {
+        this.year = year;
+        this.brand = brand;
+    }
 
+    // 상속되는 필드(protected) 초기화 생성자
     public Car(String brand) {
+        System.out.println("부모생성자 호출!" + brand);
         this.brand = brand;
     }
 
@@ -26,4 +34,5 @@ public class Car {
     public void openDoor() {
         System.out.println("기본 차가 문을 엽니다.");
     }
+
 }
