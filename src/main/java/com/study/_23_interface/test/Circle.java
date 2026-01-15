@@ -1,14 +1,14 @@
-package com.study._23_interface.test;
+package com.study._23_Interface.test;
 
-public class Circle implements Shape{
+public class Circle implements Shape {
+    private int r;
 
-    public Circle(double r) {
+    public Circle(int r) {
         this.r = r;
     }
 
-    double r = 5;
     @Override
     public double getArea() {
-        return r*r * 3.14;
+        return r * r * 3.14;
     }
 }

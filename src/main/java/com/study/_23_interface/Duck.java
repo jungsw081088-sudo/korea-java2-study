@@ -1,7 +1,6 @@
-package com.study._23_interface;
+package com.study._23_Interface;
 
-public class Duck implements Animal, Swimmable, Flyable{
-
+public class Duck implements Animal, Swimmable, Flyable {
     @Override
     public void sound() {
         System.out.println("꽥꽥");
@@ -9,7 +8,7 @@ public class Duck implements Animal, Swimmable, Flyable{
 
     @Override
     public void move() {
-        System.out.println("오리 뒤뚱뒤뚱");
+        System.out.println("오리가 뒤뚱뒤뚱");
     }
 
     @Override
@@ -19,6 +18,6 @@ public class Duck implements Animal, Swimmable, Flyable{
 
     @Override
     public void swim() {
-        System.out.println("오리 수영한다.");
+        System.out.println("오리가 어푸어푸");
     }
 }

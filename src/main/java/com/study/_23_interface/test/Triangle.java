@@ -1,16 +1,16 @@
-package com.study._23_interface.test;
+package com.study._23_Interface.test;
 
-public class Triangle implements Shape{
+public class Triangle implements Shape {
+    private int base;
+    private int height;
 
-    public Triangle(double base, double height) {
+    public Triangle(int base, int height) {
         this.base = base;
         this.height = height;
     }
 
-    double base, height;
-
     @Override
     public double getArea() {
-        return base * height;
+        return (base * height) / 2.0;
     }
 }

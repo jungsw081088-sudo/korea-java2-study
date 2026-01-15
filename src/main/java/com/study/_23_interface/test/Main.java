@@ -1,14 +1,17 @@
-package com.study._23_interface.test;
+package com.study._23_Interface.test;
 
 public class Main {
     public static void main(String[] args) {
+        Shape s1 = new Circle(3);
+        Shape s2 = new Rectangle(4, 2);
+        Shape s3 = new Triangle(5, 10);
+
         double total = 0.0;
-        Shape s1 = new Circle(4);
-        Shape s2 = new Rectangle(10, 10);
-        Shape s3 = new Triangle(2, 4);
         Shape[] shapes = {s1, s2, s3};
         for (Shape s : shapes) {
-
+            // 다형성
+            // 컴파일러는 Shape타입은 getArea()가 있는지?
+            // JVM은 new로 생성된 실제객체의 getArea()호출
             total += s.getArea();
         }
         System.out.println(total);

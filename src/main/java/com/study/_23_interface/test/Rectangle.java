@@ -1,14 +1,13 @@
-package com.study._23_interface.test;
+package com.study._23_Interface.test;
 
-public class Rectangle implements Shape{
+public class Rectangle implements Shape {
+    private int width;
+    private int height;
 
-    public Rectangle(double width, double height) {
+    public Rectangle(int width, int height) {
         this.width = width;
         this.height = height;
     }
-
-    double width;
-    double height;
 
     @Override
     public double getArea() {
