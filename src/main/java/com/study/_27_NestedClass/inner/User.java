@@ -1,9 +1,10 @@
-package com.study._25_Singleton;
+package com.study._27_NestedClass.inner;
 
-// 1. 필드 정의
+// User에 빌더패턴을 적용시켜 주세요!
+// 1. 필드정의
 // 2. 정적클래스 정의
-// 3. 메서드 체이닝
-// 4. 바깥클래스 생성자 정의 -> 빌더가 넘겨주는 매서드
+// 3. 메서드체이닝 (setter)
+// 4. 바깥클래스 생성자 정의 -> 빌더가 넘겨주는 메서드
 public class User {
     private String username;
     private String name;
@@ -24,12 +25,10 @@ public class User {
             this.username = username;
             return this;
         }
-
         public Builder name(String name) {
             this.name = name;
             return this;
         }
-
         public Builder address(String address) {
             this.address = address;
             return this;
@@ -40,6 +39,4 @@ public class User {
             return u;
         }
     }
-
-
 }

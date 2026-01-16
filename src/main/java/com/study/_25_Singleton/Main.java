@@ -1,9 +1,13 @@
 package com.study._25_Singleton;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Main {
     public static void main(String[] args) {
+        // 스태틱메서드로만 객체에 접근가능
+        LogManager logger1 = LogManager.getInstance();
+        LogManager logger2 = LogManager.getInstance();
+
+        // 정말로 같은 객체일까?(같은 주소일까?)
+        System.out.println(logger1 == logger2);
 
         AppConfig config1 = AppConfig.getInstance();
         AppConfig config2 = AppConfig.getInstance();
@@ -18,7 +22,6 @@ public class Main {
         System.out.println(config1);
         System.out.println(config2);
 
+
     }
-
-
 }
