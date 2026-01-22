@@ -49,7 +49,7 @@ public class itemMain {
 
         for(Integer price : totalPrices) {
             result3 += price;
-        }
+        } // sadf
 
         System.out.println(result3);
 
