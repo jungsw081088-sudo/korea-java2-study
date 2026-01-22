@@ -26,15 +26,4 @@ public class ClassGrade {
     public int getDiscountRate() {
         return this.discountRate;
     }
-
-    public static void printDiscountRate(ClassGrade grade) {
-        int discountRate = grade.getDiscountRate();
-        System.out.println(discountRate);
-    }
-
-    public static void main(String[] args) {
-
-    }
-
-
 }
